@@ -29,6 +29,7 @@ class HangmanViewController: UIViewController {
     
     @IBAction func guessPressed(_ sender: Any) {
         if let temp : String = textInput.text {
+            textInput.text = ""
             let guess = temp.capitalized
             if guess.count == 1 {
                 gameState.guess(letter: Character(guess))
