@@ -83,7 +83,7 @@ class HangmanViewController: UIViewController {
     }
     
     func gameLoseAlert() {
-        let alertController = UIAlertController(title: "YOU LOST", message: "Try studying harder next time!", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "YOU LOST", message: "The word is: " + self.gameState.gamePhrase, preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "Start Over", style: .default) { (action:UIAlertAction) in
             self.gameState = HangmanGame()
