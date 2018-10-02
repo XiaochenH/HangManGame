@@ -55,44 +55,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-k1-T4z">
-                                <rect key="frame" x="152" y="607" width="71" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-a0-gem">
+                                <rect key="frame" x="108.5" y="400" width="157" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bg-lt-r94">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                        <state key="normal" title="Guess"/>
+                                        <connections>
+                                            <action selector="guessPressed:" destination="n5e-LS-nKH" eventType="touchUpInside" id="XCg-9X-fJ7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-k1-T4z">
+                                        <rect key="frame" x="86" y="0.0" width="71" height="30"/>
+                                        <state key="normal" title="Start Over"/>
+                                        <connections>
+                                            <action selector="restartPressed:" destination="n5e-LS-nKH" eventType="touchUpInside" id="Sn6-1o-Y9i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Nft-YE-vvu"/>
+                                    <constraint firstAttribute="height" constant="30" id="YeP-0k-hyN"/>
                                 </constraints>
-                                <state key="normal" title="Start Over"/>
-                                <connections>
-                                    <action selector="restartPressed:" destination="n5e-LS-nKH" eventType="touchUpInside" id="Sn6-1o-Y9i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bg-lt-r94">
-                                <rect key="frame" x="166" y="547" width="43" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="nIU-5m-BfR"/>
-                                </constraints>
-                                <state key="normal" title="Guess"/>
-                                <connections>
-                                    <action selector="guessPressed:" destination="n5e-LS-nKH" eventType="touchUpInside" id="XCg-9X-fJ7"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="C7h-k1-T4z" firstAttribute="top" secondItem="2bg-lt-r94" secondAttribute="bottom" constant="30" id="04Q-T6-dky"/>
                             <constraint firstItem="gyz-57-DlS" firstAttribute="top" secondItem="qB8-cg-dMf" secondAttribute="bottom" constant="20" id="4IS-Ma-k36"/>
                             <constraint firstItem="vXj-By-hWw" firstAttribute="top" secondItem="1Kg-rd-bVF" secondAttribute="bottom" constant="20" id="95L-Kb-OyM"/>
-                            <constraint firstItem="C7h-k1-T4z" firstAttribute="top" secondItem="2bg-lt-r94" secondAttribute="bottom" constant="30" id="BAt-zj-YlH"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="leading" secondItem="85X-o1-ZFg" secondAttribute="leadingMargin" constant="50" id="C93-H0-nEA"/>
+                            <constraint firstItem="mIN-a0-gem" firstAttribute="centerX" secondItem="85X-o1-ZFg" secondAttribute="centerX" id="GDx-87-uCm"/>
+                            <constraint firstItem="mIN-a0-gem" firstAttribute="top" secondItem="gyz-57-DlS" secondAttribute="bottom" constant="30" id="GJZ-BO-dmo"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="top" secondItem="sLA-94-4iU" secondAttribute="bottom" constant="20" id="KZU-uc-drI"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="centerX" secondItem="qB8-cg-dMf" secondAttribute="centerX" id="ZRT-UP-Tkf"/>
-                            <constraint firstItem="2bg-lt-r94" firstAttribute="centerX" secondItem="85X-o1-ZFg" secondAttribute="centerX" id="dLZ-DV-7Hg"/>
-                            <constraint firstItem="C7h-k1-T4z" firstAttribute="centerX" secondItem="2bg-lt-r94" secondAttribute="centerX" id="msD-cu-aya"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="centerX" secondItem="85X-o1-ZFg" secondAttribute="centerX" id="oEn-6w-evi"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="centerX" secondItem="vXj-By-hWw" secondAttribute="centerX" id="oV6-cg-2uX"/>
-                            <constraint firstItem="cgW-vH-73r" firstAttribute="top" secondItem="C7h-k1-T4z" secondAttribute="bottom" constant="30" id="pOo-ae-bLi"/>
-                            <constraint firstItem="C7h-k1-T4z" firstAttribute="centerX" secondItem="gyz-57-DlS" secondAttribute="centerX" id="tSm-99-qh0"/>
                             <constraint firstItem="qB8-cg-dMf" firstAttribute="top" secondItem="vXj-By-hWw" secondAttribute="bottom" constant="20" id="uRX-uu-lZL"/>
-                            <constraint firstItem="C7h-k1-T4z" firstAttribute="centerX" secondItem="85X-o1-ZFg" secondAttribute="centerX" id="vUf-iP-PYB"/>
                             <constraint firstItem="1Kg-rd-bVF" firstAttribute="centerX" secondItem="gyz-57-DlS" secondAttribute="centerX" id="yj6-rC-uCP"/>
                         </constraints>
                     </view>
